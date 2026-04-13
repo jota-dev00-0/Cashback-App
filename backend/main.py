@@ -11,7 +11,7 @@ app = FastAPI(title="Cashback API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # em produção, substitua pelo domínio do frontend
+    allow_origins=["https://cashback-app-omega.vercel.app/"],  # em produção, substitua pelo domínio do frontend
     allow_methods=["*"],
     allow_headers=["*"],
 )
