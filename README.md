@@ -48,7 +48,7 @@ Banco de Dados (PostgreSQL)
 ### Deploy (sugestão)
 
 * Backend: Render
-* Frontend: Vercel ou Netlify
+* Frontend: Vercel
 * Banco: Supabase
 
 ---
