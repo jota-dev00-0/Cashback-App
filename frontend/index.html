@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cashi+</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>Cashi+</h1>
+    <p>Calcule o cashback de acordo com a categoria do cliente</p>
+  </header>
+
+  <div class="card">
+    <h2>Nova consulta</h2>
+
+    <div class="field">
+      <label for="client_type">Tipo de cliente</label>
+      <select id="client_type">
+        <option value="standard">Standard</option>
+        <option value="vip">VIP</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="purchase_value">Valor da compra (R$)</label>
+      <input type="number" id="purchase_value" min="0.01" step="0.01" placeholder="Ex: 250.00" />
+    </div>
+
+    <button id="submit-btn" onclick="submitCashback()">Calcular</button>
+    <p class="error-msg" id="error-msg"></p>
+
+    <div class="result-box" id="result-box">
+      <div>
+        <div class="result-label">Cashback a receber</div>
+        <div class="result-pct" id="result-pct"></div>
+      </div>
+      <div class="result-value" id="result-value"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Seu histórico</h2>
+    <div id="history-container">
+      <p class="loading">Carregando...</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
