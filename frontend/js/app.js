@@ -1,4 +1,4 @@
-const API_URL = "https://cashback-app-xqja.onrender.com";
+const API_URL = "https://cashback-app-xqja.onrender.com/api/v1";
 
 async function submitCashback() {
   const clientType    = document.getElementById("client_type").value;
